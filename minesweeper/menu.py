@@ -1,5 +1,7 @@
+from game import game_start
+
 # Display the menu and rules
-# None of the input() calls or invalid inputs should be present on codex
+# None of the input() calls or invalid inputs should be present on Codex
 def menu():
     
     while True:
@@ -16,13 +18,13 @@ def menu():
             choice = input("Enter choice (1-4): ").strip()
             
             if choice == "1":
-                play("easy")
+                game_start("easy")
                 continue
             elif choice == "2":
-                play("medium")
+                game_start("medium")
                 continue
             elif choice == "3":
-                play("hard")
+                game_start("hard")
                 continue
             elif choice == "4":
                 continue
